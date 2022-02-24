@@ -1,49 +1,45 @@
-~
-#include <iostream>
-using namespace std;
-double add(double, double);
-double sub(double, double); 
-double mul(double, double); 
-double div(double, double);
-double result;
-int main(){
-    double num1,num2;
-    char zx;
-    cout<<"enter the number ";cin>>num1>>num2;
-    cout<<"choose the operation ";cin>>zx;
-    cout<<"the result of your operation is ";
-    if(zx=='+'){
-        add(num1,num2);
-        
-    }
-    else if(zx=='-'){
-        sub(num1,num2);
-         
-    }
-    else if(zx=='*'){
-        mul(num1,num2);
-        
-    }
-    else 
-    {
-        div(num1,num2);
-}
-}
-double add(double num1, double num2){
-    result=num1+num2;
-    cout<<result;
-    return 0;
-}
-double sub(double num1, double num2){
-    result=num1-num2;
-    cout<<result;
-    return 0;
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
 
-}
-double mul(double num1, double num2){
-    result=num1*num2;
-    cout<<result;
-    return 0;
-   
-}
-double div(double num1, double num2){
+# Org-mode
+.org-id-locations
+*_archive
+
+# flymake-mode
+*_flymake.*
+
+# eshell files
+/eshell/history
+/eshell/lastdir
+
+# elpa packages
+/elpa/
+
+# reftex files
+*.rel
+
+# AUCTeX auto folder
+/auto/
+
+# cask packages
+.cask/
+dist/
+
+# Flycheck
+flycheck_*.el
+
+# server auth directory
+/server/
+
+# projectiles files
+.projectile
+
+# directory configuration
+.dir-locals.el
